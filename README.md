@@ -1,6 +1,7 @@
 # Giphy-App
 
 Frameworks - UIKit, SnapKit
+
 API - Giphy.com
 
 iOS application that shows you trending GIFs where users also have the ability to search for GIFs by entering a query/keyword in the search bar
