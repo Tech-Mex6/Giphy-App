@@ -14,13 +14,13 @@ iOS application that shows you trending GIFs. User(s) have the ability to search
 - [CocoaPods](https://cocoapods.org/) - A dependency manager for Swift and Objective-C Cocoa projects.
 
 # Project Structure
-The project has 2 major view controllers, 'MainViewController' and 'DetailViewController'. The 'MainViewController' is the first screen users land on after launching the app, this contains a collection of all the GIFs downloaded from the trending GIF endpoint. It also has a search bar which the user uses to search for GIFs using keywords.
-The 'DetailViewontroller' is the screen users land on after tapping/selecting a cell. It displays the selected GIF, its title, the source of the GIF and its rating (g, pg, r, etc.).
+The project has 2 major view controllers, `MainViewController` and `DetailViewController`. The `MainViewController` is the first screen users land on after launching the app, this contains a collection of all the GIFs downloaded from the trending GIF endpoint. It also has a search bar to enable the user search for GIFs using keywords.
+The `DetailViewontroller` is the screen the user lands on after tapping/selecting a cell. It displays the selected GIF, its title, the source of the GIF and its rating (g, pg, r, etc.).
 
 # Network Layer
 This project uses the MVC design pattern.
-The network layer holds a Singleton class called 'NetworkManager' which habours all the methods used for making network calls/requests.
-To make a network call, you simply create a reference to the Singleton in order to gain access to its methods. Below is an illustration of how to gain access to the 'fetchTrendingData(rating: rating)' method in order to make the network call.
+The network layer holds a Singleton class called `NetworkManager` which habours all the methods used for making network calls/requests.
+To make a network call, you simply create a reference to the Singleton in order to gain access to its methods. Below is an illustration of how to gain access to the `fetchTrendingData(rating: rating)` method in order to make the network call.
 
 ```
     func fetchData() {
@@ -47,9 +47,8 @@ To make a network call, you simply create a reference to the Singleton in order 
 All views were built programmatically. All UI components like cells and labels are customized and can be reused.
 
 # Model Layer
-The model consists of 6 Codable Structs; 'TrendingData', 'TrendingResponse', 'SearchData', 'SearchResponse', 'GetById', 'GetByIDResponse'
-Frameworks - UIKit, SnapKit
+The model consists of 6 Codable Structs; `TrendingData`, `TrendingResponse`, `SearchData`, `SearchResponse`, `GetById`, `GetByIDResponse`
 
 # Author
-- Meekam Okeke
+- ### Meekam Okeke
 
